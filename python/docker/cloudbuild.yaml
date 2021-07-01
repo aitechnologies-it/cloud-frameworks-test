@@ -1,0 +1,9 @@
+steps:
+- name: "gcr.io/cloud-builders/docker"
+  args:
+  - build
+  - "--tag=eu.gcr.io/ultra-badge-248311/pythonminimal"
+  - "--file=./docker/Dockerfile"
+  - .
+images:
+- "eu.gcr.io/ultra-badge-248311/pythonminimal"
