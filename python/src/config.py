@@ -10,10 +10,6 @@ class Config:
     PROJECT_ID = os.environ.get('PROJECT_ID')
     FLASK_PORT = os.environ.get('FLASK_PORT', 8080)
 
-    REQUIRE_AUTH = bool(strtobool(os.environ.get('REQUIRE_AUTH', 'False')))
-    BASIC_AUTH_USERNAME = os.environ.get('BASIC_AUTH_USERNAME', 'manzi')
-    BASIC_AUTH_PASSWORD = os.environ.get('BASIC_AUTH_PASSWORD', 'cane')
-
     @staticmethod
     def init_app(app):
         pass
@@ -26,8 +22,6 @@ class DevelopmentConfig(Config):
 
 class TestingConfig(Config):
     TESTING = True
-    BASIC_AUTH_USERNAME = 'manzi'
-    BASIC_AUTH_PASSWORD = 'cane'
 
 
 class ProductionConfig(Config):

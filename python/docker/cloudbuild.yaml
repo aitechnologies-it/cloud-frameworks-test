@@ -2,8 +2,8 @@ steps:
 - name: "gcr.io/cloud-builders/docker"
   args:
   - build
-  - "--tag=eu.gcr.io/ultra-badge-248311/pythonminimal"
+  - "--tag=eu.gcr.io/PROJECT_ID/python-example"
   - "--file=./docker/Dockerfile"
   - .
 images:
-- "eu.gcr.io/ultra-badge-248311/pythonminimal"
+- "eu.gcr.io/PROJECT_ID/python-example"
