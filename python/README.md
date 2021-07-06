@@ -13,7 +13,7 @@ python src/main.py
 
 ```sh
 # Build with Cloud Build
-gcloud builds submit --project ${PROJECT_ID} --config ./docker/cloudbuild.yaml .
+gcloud builds submit --project ${PROJECT_ID} --config ./cloudbuild.yaml .
 
 # Deploy on Cloud Run
 gcloud run deploy python-example \
