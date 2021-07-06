@@ -4,9 +4,10 @@ import os
 from flask import Flask
 from flask_cors import CORS
 import logging
-logger = logging.getLogger(__name__)
-
 from logging.config import dictConfig
+
+logger = logging.getLogger(__name__)
+# Structured logging to better integrate with Cloud Services
 dictConfig({
     "version": 1,
     "disable_existing_loggers": True,
