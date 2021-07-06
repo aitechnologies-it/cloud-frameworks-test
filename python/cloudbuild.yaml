@@ -3,7 +3,7 @@ steps:
   args:
   - build
   - "--tag=eu.gcr.io/PROJECT_ID/python-example"
-  - "--file=./docker/Dockerfile"
+  - "--file=./Dockerfile"
   - .
 images:
 - "eu.gcr.io/PROJECT_ID/python-example"
